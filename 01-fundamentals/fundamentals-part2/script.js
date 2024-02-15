@@ -114,7 +114,90 @@
 // let text = "Please visit Microsoft!";
 // let newText = text.replace(/MICROSOFT/i, "W3Schools");
 
-let text = "hello how are you doing today?";
-const myArray = text.split(" ");
-console.log(myArray)
-console.log(myArray[3])
+// let text = "hello how are you doing today?";
+// const myArray = text.split(" ");
+// console.log(myArray)
+// console.log(myArray[3])
+
+
+// if ...else
+
+// const hour = new Date().getHours(); 
+// let greeting;
+// if (hour < 10) {
+//     greeting = "Good morning";
+// }
+// else if (hour < 18) {
+//     greeting = "Good day";
+// }
+// else {
+//     greeting = "Good evening";
+// }
+
+// console.log(greeting)
+
+// *SWITCH into IF
+
+// switch (browser) {
+//     case 'Edge':
+//     alert( "You've got the Edge!" );
+//     break;
+
+//     case 'Chrome':
+//     case 'Firefox':
+//     case 'Safari':
+//     case 'Opera':
+//     alert( 'Okay we support these browsers too' );
+//     break;
+
+//     default:
+//     alert( 'We hope that this page looks ok!' );
+// }
+
+// To precisely match the functionality of switch, the if must use a strict comparison '==='.
+// For given strings though, a simple '==' works too.
+
+
+// let browser;
+// if (browser == "Edge") {
+//     alert("You've got the Edge");
+// }
+// else if (browser == "Chrome" 
+//     || browser == "Firefox" 
+//     || browser == "Safari"
+//     || browser == "Opera") {
+//         alert("Okay we support these browsers too");
+// }
+// else {
+//     alert('We hope that this page looks ok!');
+// }
+
+// *IF into SWITCH
+
+// let a = +prompt('a?', '');
+// if (a == 0) {
+// alert( 0 );
+// }
+// if (a == 1) {
+// alert( 1 );
+// }
+
+// if (a == 2 || a == 3) {
+// alert( '2,3' );
+// }
+
+let a = +prompt('a?', '');
+switch (a) {
+    case 0:
+        alert(0);
+    break;
+    case 1:
+        alert(1);
+    break;
+    case 2:
+    case 3:
+        alert('2,3');
+    break; // Please note: the break at the bottom is not required. But we put it to make the code future-proof.
+    default:
+}
+
